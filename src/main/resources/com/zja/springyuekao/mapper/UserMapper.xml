@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zja.springyuekao.mapper.UserMapper">
+
+    <update id="UpdateUser">
+        UPDATE user
+        SET sex = #{sex},
+            health = #{health},
+            hobby = #{hobby},
+            people = #{people},
+            location = #{location},
+            work = #{work},
+            other = #{other}
+        WHERE name = #{name}
+    </update>
+</mapper>
